@@ -174,7 +174,8 @@ def generate_launch_description():
     output='screen',
     arguments=[
         '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
-        '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+        # Cambiamos LaserScan por PointCloud2 para aprovechar el 3D real
+        '/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked', 
         '/camera/image_raw@sensor_msgs/msg/Image[gz.msgs.Image',
         '/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
         '/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry',
