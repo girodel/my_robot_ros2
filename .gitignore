@@ -1,0 +1,7 @@
+build/
+install/
+log/
+frames_*
+.vscode/
+install/
+**/*.pyc

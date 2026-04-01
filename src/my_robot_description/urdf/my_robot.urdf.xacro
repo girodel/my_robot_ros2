@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 76c3835ad13cf92a9fda6be4 -->
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+ 
+    <xacro:include filename="xacro_properties/xacro_properties.xacro" />
+    <xacro:include filename="modules/chassis_ruedas.xacro" />
+    <xacro:include filename="modules/camara.xacro" />
+    <xacro:include filename="modules/lidar.xacro" />
+    <xacro:include filename="gazebo/plugins.xacro" />
+    <xacro:include filename="gazebo/properties.xacro" />
+
+
+
+</robot>

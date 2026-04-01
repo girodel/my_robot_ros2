@@ -1,0 +1,44 @@
+{
+  "documentId": "76c3835ad13cf92a9fda6be4",
+  "outputFormat": "urdf",
+  "packageName": "my_robot_description",
+  "robotName": "my_robot",
+  "assemblyName": "robo_2",
+  "export_stl_with_meters": true,
+  "set_zero_mass_to_fixed": false,
+  "default_joint_type": "continuous",
+  "mesh_output_format": "stl",
+
+  "joint_properties": {
+
+      "default": {
+          "max_effort": 100,
+          "max_velocity": 100
+      },
+
+      "dof_rueda_derecha": {
+          "type": "revolute"
+      },
+
+      "dof_rueda_izquierda": {
+          "type": "revolute"
+      },
+
+      "dof_marco_rueda": {
+          "type": "fixed"
+      },
+
+      "dof_rueda_loca": {
+          "type": "revolute"
+      },
+
+      "dof_lidar": {
+          "type": "fixed"
+      },
+
+      "dof_camara": {
+          "type": "fixed"
+      }
+  }
+}
+
