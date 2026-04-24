@@ -12,8 +12,15 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 install(
-  DIRECTORY launch assets urdf  worlds rviz  
+  DIRECTORY launch assets urdf  worlds rviz  config
   DESTINATION share/${PROJECT_NAME}/
+)
+
+# 🔥 Scripts Python
+install(
+  PROGRAMS
+    scripts/obstacle_avoidance
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 
